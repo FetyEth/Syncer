@@ -77,11 +77,6 @@ export default function ConnectionStatus({
             {statusDisplay.text}
           </span>
         </div>
-        {method !== "none" && (
-          <span className="text-xs text-gray-400 font-mono">
-            via {method.toUpperCase()}
-          </span>
-        )}
       </div>
 
       <div className="space-y-1 text-xs font-mono">

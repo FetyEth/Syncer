@@ -121,30 +121,6 @@ export function ConsensusFeed({ streams, onStreamClick }: ConsensusFeedProps) {
 
       {/* Streams Container */}
       <div className="absolute inset-0 z-10">
-        {/* Empty State */}
-        {uniqueStreams.length === 0 && (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center space-y-4 max-w-md px-6">
-              <div className="flex justify-center">
-                <div className="w-16 h-16 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center">
-                  <Database className="w-8 h-8 text-cyan-400 animate-pulse" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold text-white">
-                  Waiting for Blocks...
-                </h3>
-                <p className="text-sm text-gray-400">
-                  Listening for new transactions on Somnia Network
-                </p>
-                <p className="text-xs text-gray-500 font-mono">
-                  Check connection status in the right panel →
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
-
         <AnimatePresence mode="popLayout">
           {uniqueStreams.map((stream) => {
             // Find index in its group
