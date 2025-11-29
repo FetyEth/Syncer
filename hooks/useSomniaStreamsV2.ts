@@ -34,6 +34,7 @@ import { decodeEventLog, toHex } from "viem";
 const STAGE_DURATION = 300;
 const MAX_STREAMS = 100;
 const USE_REAL_BLOCKCHAIN_DATA = true; // Fetch real data from Somnia
+const USE_DEMO_MODE = false; // Set to true to use demo data instead of live SDS streams
 const BLOCK_FETCH_INTERVAL = 3000; // Fetch new blocks every 3 seconds
 
 export function useSomniaStreams() {
