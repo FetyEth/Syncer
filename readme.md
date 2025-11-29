@@ -1,4 +1,4 @@
-# Somnia SDS Visualizer
+# Syncer
 
 Real-time blockchain transaction visualizer for the Somnia Data Streams Mini Hackathon.
 
